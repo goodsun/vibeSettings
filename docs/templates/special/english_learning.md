@@ -1,7 +1,7 @@
 # English Learning Project Template
 
 ## プロジェクト概要
-英語学習用のClaude設定テンプレートです。
+英語学習用のAIアシスタント設定テンプレートです。
 
 ## 特徴
 - 翻訳表示機能（日本語⇔英語）
@@ -10,14 +10,16 @@
 - 視覚的な区別（絵文字使用）
 
 ## 使用方法
-1. このテンプレートをプロジェクトのCLAUDE.mdにコピー
-2. claude_configs/english_learning.mdの設定を確認
+1. このテンプレートをプロジェクトの設定ファイルにコピー
+2. configs/english_learning.mdの設定を確認
 3. 「英語学習モードON」で機能を有効化
 
+*Claude設定例: CLAUDE.mdにコピーして使用*
+
 ## 必要な設定ファイル
-- claude_configs/english_learning.md
-- claude_configs/project_config.md
-- claude_configs/strict_rules.md
+- configs/english_learning.md
+- configs/project_config.md
+- configs/strict_rules.md
 
 ## サンプル使用例
 ```

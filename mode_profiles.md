@@ -2,7 +2,9 @@
 
 ## 使い方
 1. 使用したいプロファイル名を ACTIVE_PROFILE に設定
-2. Claudeはそのプロファイルに含まれる設定ファイルのみを読み込みます
+2. AIアシスタントはそのプロファイルに含まれる設定ファイルのみを読み込みます
+
+*Claude設定例: Claudeは指定されたプロファイルの設定を読み込み*
 
 ## ACTIVE_PROFILE: current_settings
 ## SPEED_MODE: cautious  # fast or cautious

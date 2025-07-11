@@ -1,6 +1,6 @@
 # プロジェクト別設定ガイド
 
-このドキュメントでは、プロジェクトごとに最適なClaude Code設定を使い分ける方法を説明します。
+このドキュメントでは、プロジェクトごとに最適なAIアシスタント設定を使い分ける方法を説明します。
 
 ## 📋 目次
 
@@ -29,7 +29,7 @@ vim ~/vibeSettings/mode_profiles.md
 # 2. ACTIVE_PROFILEを変更
 ## ACTIVE_PROFILE: development_only  # ← ここを変更
 
-# 3. Claude Codeを再起動（必要な場合）
+# 3. AIアシスタントを再起動（必要な場合）
 ```
 
 ### 利用可能なプロファイル
@@ -66,10 +66,10 @@ vim ~/vibeSettings/mode_profiles.md
 # プロジェクトディレクトリに移動
 cd ~/my-awesome-project
 
-# .claude ディレクトリを作成
+# AI設定ディレクトリを作成します（Claudeの場合: .claude）
 mkdir -p .claude
 
-# プロジェクト専用のCLAUDE.mdを作成
+# プロジェクト専用のAI設定ファイルを作成（Claudeの場合: CLAUDE.md）
 cat > .claude/CLAUDE.md << 'EOF'
 # Project: My Awesome Project
 
@@ -170,7 +170,7 @@ echo "React TODOアプリ開発用設定" > .claude/CLAUDE.md
 # ~/vibeSettings/mode_profiles.md で
 # ACTIVE_PROFILE: react_project に変更
 
-# 4. Claude Codeを起動
+# 4. AIアシスタントを起動（Claudeの場合: claudeコマンド）
 claude
 ```
 
@@ -221,9 +221,9 @@ cd ~/project-c
 
 ### 3. チーム開発での活用
 ```bash
-# チーム共通設定をGit管理
+# チーム共通設定をGit管理します（Claudeの場合の例）
 git add .claude/CLAUDE.md
-git commit -m "Add project-specific Claude settings"
+git commit -m "Add project-specific AI assistant settings"
 
 # 個人設定は.gitignoreで除外
 echo ".claude/CLAUDE.local.md" >> .gitignore
@@ -237,7 +237,7 @@ echo ".claude/CLAUDE.local.md" >> .gitignore
 ## トラブルシューティング
 
 ### Q: 設定が反映されない
-A: Claude Codeを再起動するか、新しいセッションを開始してください。
+A: AIアシスタントを再起動するか、新しいセッションを開始してください。
 
 ### Q: どのプロファイルを使えばいいか分からない
 A: まずは `default` プロファイルから始めて、必要に応じて調整してください。

@@ -1,6 +1,6 @@
 # vibeSettings
 
-Claude Codeの振る舞いをカスタマイズするための設定テンプレート集です。プロファイルベースのシンプルな設定システムで、開発スタイルに応じた動作モードを簡単に切り替えることができます。
+AI開発アシスタントの振る舞いをカスタマイズするための設定テンプレート集です。プロファイルベースのシンプルな設定システムで、開発スタイルに応じた動作モードを簡単に切り替えることができます。
 
 ## 🚀 クイックスタート
 
@@ -11,18 +11,20 @@ git clone https://github.com/yourusername/vibeSettings.git ~/vibeSettings
 
 # 設定ファイルを作成
 cd ~/vibeSettings
-cp mode_profiles.md.sample mode_profiles.md
+cp samples/mode_profiles.md.sample mode_profiles.md
 ```
 
-### 2. Claude Codeの設定
-`~/.claude/CLAUDE.md`に以下を追加：
+### 2. AI設定
+**Claudeの場合:** `~/.claude/CLAUDE.md`に以下を追加：
 ```markdown
-# Claude Code Configuration
+# AI Assistant Configuration
 
 ### 設定ファイル管理
 あなたは開発補助AIです。
 ~/vibeSettings内のMAIN.mdを読み込み、内容に従って振る舞ってください。
 ```
+
+**他のAIの場合:** 各AIのグローバル設定ファイルに上記と同様の設定を記述
 
 ### 3. プロファイルの選択
 `mode_profiles.md`を編集して使用したいプロファイルを選択：
@@ -36,7 +38,6 @@ cp mode_profiles.md.sample mode_profiles.md
 ```
 vibeSettings/
 ├── MAIN.md                    # エントリーポイント
-├── mode_profiles.md.sample    # プロファイル設定のサンプル
 ├── mode_profiles.md           # 実際の設定（.gitignore）
 ├── configs/                   # 各種動作設定
 │   ├── development.md         # 開発モード設定
@@ -44,7 +45,13 @@ vibeSettings/
 │   ├── interactive_mode.md    # インタラクティブモード
 │   ├── strict_rules.md        # 厳守ルール（常時有効）
 │   └── ...                    # その他の設定
-└── docs/                      # ドキュメント類
+├── docs/                      # ドキュメント類
+├── samples/
+│   └── mode_profiles.md.sample # プロファイル設定のサンプル
+└── ideanote/                  # アイデアメモ（.gitignore）
+    ├── templates/             # メモ用テンプレート
+    ├── ongoing/               # 進行中のアイデア
+    └── archive/               # アーカイブ
 ```
 
 ## 🎯 利用可能なプロファイル
@@ -139,7 +146,7 @@ MIT License
 
 ## 🔗 関連リンク
 
-- [Claude Code公式ドキュメント](https://docs.anthropic.com/en/docs/claude-code)
+- [Claude公式ドキュメント](https://docs.anthropic.com/en/docs/claude-code)（Claudeの場合）
 - [プロジェクト別設定ガイド](./docs/PROJECT_SETUP.md)
-- [設定例集](./docs/templates/)
+- [設定例集](./docs/templates/README.md)
 - [トラブルシューティング](./docs/GLOBAL_SETUP.md)

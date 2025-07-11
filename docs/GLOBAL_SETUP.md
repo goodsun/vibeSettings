@@ -1,10 +1,10 @@
 # グローバル設定の適用方法
 
 ## 概要
-`~/.claude/CLAUDE.md`に設定を記述することで、全てのClaude Codeセッションで共通の設定を適用できます。
+グローバル設定ファイルに設定を記述することで、全てのAIアシスタントセッションで共通の設定を適用できます。
 
 ## 動作原理
-1. **グローバル設定**: `~/.claude/CLAUDE.md`が全セッションで読み込まれる
+1. **グローバル設定**: グローバル設定ファイルが全セッションで読み込まれる（Claudeの場合: `~/.claude/CLAUDE.md`）
 2. **モード管理**: `~/vibeSettings/configs/mode_setting.md`でモードを制御
 3. **設定ファイル**: ONのモードに対応する設定ファイルが適用される
 
@@ -20,7 +20,7 @@ cp ~/vibeSettings/samples/mode_setting.md.sample ~/vibeSettings/configs/mode_set
 `~/vibeSettings/configs/mode_setting.md`を編集して、必要なモードをONに設定
 
 ### 3. 確認
-任意のディレクトリで`claude`を起動すると、設定が適用されます
+任意のディレクトリでAIアシスタントを起動すると、設定が適用されます
 
 ## メリット
 - **統一性**: 全プロジェクトで一貫した設定
@@ -29,12 +29,12 @@ cp ~/vibeSettings/samples/mode_setting.md.sample ~/vibeSettings/configs/mode_set
 
 ## 注意点
 - `mode_setting.md`が存在しない場合は、sampleファイルをコピーする必要があります
-- 個別プロジェクトに`CLAUDE.md`がある場合は、そちらが優先されます
+- 個別プロジェクトにAI設定ファイルがある場合は、そちらが優先されます
 - `mode_setting.md`はgitignoreされているため、個人設定として管理されます
 
 ## 設定の優先順位
-1. **プロジェクト固有の`CLAUDE.md`**（最優先）
-2. **グローバル設定`~/.claude/CLAUDE.md`**
+1. **プロジェクト固有のAI設定ファイル**（最優先）
+2. **グローバル設定ファイル**（Claudeの場合: `~/.claude/CLAUDE.md`）
 3. **デフォルト設定**
 
 これにより、プロジェクト毎のカスタマイズも可能です。

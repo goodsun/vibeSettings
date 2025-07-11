@@ -36,7 +36,7 @@
 ### 📝 失敗例
 ```
 ユーザー: 「まずはbootstrap」
-Claude: setup.sh に bootstrap を混ぜ込んだ（間違い）
+AIアシスタント: setup.sh に bootstrap を混ぜ込んだ（間違い）
 
 正解: bootstrap を単独で実行し、その後で setup を分離する
 ```

@@ -8,7 +8,7 @@
 - **進捗管理ファイル**: `docs/planning/milestones.md`
 - **現在のステータス**: Stage 3完了、Stage 4進行中（60%）
 
-### Claude Codeの進捗管理ルール
+### AIアシスタントの進捗管理ルール
 1. **作業完了時**: milestones.mdを必ず更新する
 2. **進捗確認時**: milestones.mdの情報を参照して回答する
 3. **新機能追加時**: 該当するStageの項目を更新する

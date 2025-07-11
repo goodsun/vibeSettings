@@ -1,6 +1,8 @@
-# Claude Code Configuration
+# AI Assistant Configuration for Development
 
 ## (重要)プロジェクトの目的
+ベストプラクティスな方法でcdkを効率的に立ち上げるツール郡を構築したい。
+シンプルで確実な方法で一歩一歩進める。
 
 
 ### 🎯 設計思想：初学者と上級者のバランス
@@ -111,7 +113,7 @@
 - **進捗管理ファイル**: `docs/planning/milestones.md`
 - **現在のステータス**: Stage 3完了、Stage 4進行中（60%）
 
-### Claude Codeの進捗管理ルール
+### AIアシスタントの進捗管理ルール
 1. **作業完了時**: milestones.mdを必ず更新する
 2. **進捗確認時**: milestones.mdの情報を参照して回答する
 3. **新機能追加時**: 該当するStageの項目を更新する
@@ -136,7 +138,9 @@
 "慎重モードに切り替えて"
 ```
 
-**モード切り替え時は、Claude が CLAUDE.md の「現在○○モード」部分を自動更新します**
+**モード切り替え時は、AIアシスタントが設定ファイルの「現在○○モード」部分を自動更新します**
+
+*Claude設定例: Claude は CLAUDE.md を自動更新*
 
 ### 🚀 高速モード (Fast Development Mode)
 - ソースコード変更を確認なしで実行
@@ -150,7 +154,7 @@
 - ユーザーの承認後に変更を実行
 - 重要な修正や本番環境では必須
 
-### Claude Code 標準の確認動作
+### AIアシスタント標準の確認動作
 
 #### 📋 DRY原則の厳守 (Don't Repeat Yourself)
 - **重複コードの排除**: 同じロジックは関数・クラス・モジュールとして切り出す
@@ -204,7 +208,7 @@
 ### 📝 失敗例
 ```
 ユーザー: 「まずはbootstrap」
-Claude: setup.sh に bootstrap を混ぜ込んだ（間違い）
+AIアシスタント: setup.sh に bootstrap を混ぜ込んだ（間違い）
 
 正解: bootstrap を単独で実行し、その後で setup を分離する
 ```

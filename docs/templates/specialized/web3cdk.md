@@ -1,4 +1,4 @@
-# Claude Code Configuration - Web3 CDK Development
+# AI Assistant Configuration - Web3 CDK Development
 
 ## (重要)プロジェクトの目的
 ベストプラクティスな方法でcdkを効率的に立ち上げるツール群を構築したい。
@@ -55,7 +55,7 @@
 - **進捗管理ファイル**: `docs/planning/milestones.md`
 - **現在のステータス**: 作業開始時に確認
 
-### Claude Codeの進捗管理ルール
+### AIアシスタントの進捗管理ルール（Claudeの場合の例）
 1. **作業完了時**: milestones.mdを必ず更新する
 2. **進捗確認時**: milestones.mdの情報を参照して回答する
 3. **新機能追加時**: 該当するStageの項目を更新する

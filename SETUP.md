@@ -4,7 +4,7 @@
 
 ```bash
 # サンプルファイルから設定ファイルを作成
-cp mode_profiles.md.sample mode_profiles.md
+cp samples/mode_profiles.md.sample mode_profiles.md
 
 # 必要に応じて編集
 vim mode_profiles.md
