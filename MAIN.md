@@ -1,3 +1,5 @@
-# viveSettings
+# vibeSettings
 
-vibe cordingを効果的に行うためのプロンプト
+vibe codingを効果的に行うためのプロンプト
+
+mode_profiles.mdを読み込み、ACTIVE_PROFILEで指定されたプロファイルの設定ファイルを読み込んで、そこに記述された振る舞いをしてください。
