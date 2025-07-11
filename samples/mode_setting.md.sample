@@ -1,0 +1,61 @@
+# Mode Setting Configuration
+
+## セットアップ手順
+1. このファイルを `mode_setting.md` として保存
+2. 各モードのSTATUSを `ON` または `OFF` に設定
+3. 設定を変更したい場合は、該当するSTATUSを編集
+
+## モード設定一覧
+
+### English（英語学習モード）
+- **ファイル**: english_learning.md
+- **STATUS**: OFF
+- **説明**: 英語学習に関する設定とルール
+
+### Dev（開発モード）
+- **ファイル**: development.md
+- **STATUS**: OFF
+- **説明**: 開発プロジェクトに関する設定とルール
+
+### Docs（ドキュメンテーションモード）
+- **ファイル**: documentation.md
+- **STATUS**: OFF
+- **説明**: ドキュメント作成に関する設定とルール
+
+### Track（進捗管理モード）
+- **ファイル**: progress_management.md
+- **STATUS**: OFF
+- **説明**: プロジェクト進捗管理に関する設定とルール
+
+### Plan（インタラクティブ企画モード）
+- **ファイル**: interactive_mode.md
+- **STATUS**: OFF
+- **説明**: インタラクティブなプロジェクト企画に関する設定とルール
+
+### Analyze（システム解析モード）
+- **ファイル**: system_analysis.md
+- **STATUS**: OFF
+- **説明**: システム解析と分析に関する設定とルール
+
+### Talk（発言モード）
+- **ファイル**: talk_settings.md
+- **STATUS**: OFF
+- **説明**: 発言スタイルや対話方式に関する設定とルール
+
+## 動作速度設定
+
+### 高速モード
+- **STATUS**: OFF
+- **説明**: 高速な応答を優先し、詳細な検証を省略
+
+### 慎重モード
+- **STATUS**: ON
+- **説明**: 詳細な検証と慎重な判断を優先
+
+## 常時適用設定（STATUS制御対象外）
+- **project_config.md**: プロジェクト固有の設定（常にON）
+- **strict_rules.md**: 厳守ルール（常にON）
+
+## 使用方法
+各モードのON/OFFを変更する場合は、このファイルの該当するSTATUSを変更してください。
+ONの場合のみ、対応する設定ファイルが適用されます。
