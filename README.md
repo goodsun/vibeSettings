@@ -15,6 +15,31 @@ cp samples/mode_profiles.md.sample mode_profiles.md
 ```
 
 ### 2. AI設定
+
+**Geminiの場合:**
+
+1.  **`GEMINI.md`の作成:**
+    プロジェクトルートで以下のスクリプトを実行し、`GEMINI.md`を作成（または追記）します。
+    ```bash
+    ./script/create_gemini_md.sh
+    ```
+    このスクリプトは、`GEMINI.md`に以下の内容を記述します。
+    ```markdown
+    ### 設定ファイル管理
+    あなたは開発補助AIです。
+    ~/vibeSettings内のMAIN.mdを読み込み、内容に従って振る舞ってください。
+    ```
+2.  **エイリアスの設定 (推奨):**
+    `create_gemini_md.sh`スクリプトをどこからでも実行できるように、`~/.bashrc`または`~/.zshrc`にエイリアスを設定することを推奨します。
+    ```bash
+    # ~/.bashrc または ~/.zshrc に追加
+    alias create_gemini_md="bash ~/vibeSettings/script/create_gemini_md.sh"
+    ```
+    設定を反映させるために、ターミナルを再起動するか、`source ~/.bashrc`（または`source ~/.zshrc`）を実行してください。
+
+3.  **Gemini CLIでの利用:**
+    Gemini CLIエージェントとのセッション開始時に、"GEMINI.mdを読み込んで"と命令してください。
+
 **Claudeの場合:** `~/.claude/CLAUDE.md`に以下を追加：
 ```markdown
 # AI Assistant Configuration
@@ -146,6 +171,7 @@ MIT License
 
 ## 🔗 関連リンク
 
+- [Gemini活用Tips](./docs/GEMINI_TIPS.md)
 - [Claude公式ドキュメント](https://docs.anthropic.com/en/docs/claude-code)（Claudeの場合）
 - [プロジェクト別設定ガイド](./docs/PROJECT_SETUP.md)
 - [設定例集](./docs/templates/README.md)
